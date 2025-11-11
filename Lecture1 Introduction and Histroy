@@ -1,0 +1,89 @@
+History of NodeJs 
+
+ 
+
+Node.js = JavaScript + V8 Engine + Event Loop + Non-blocking I/O 
+Created in 2009 by Ryan Dahl to make web servers faster, scalable, and efficient. 
+
+Back in Time — When JavaScript Lived Only in Browsers 
+
+A long time ago, JavaScript was just a browser language. 
+It could make buttons work, handle forms, add animations — but it could not run outside the browser. 
+If you wanted to build a backend, you had to use other languages like Java, Python, or PHP. 
+
+So, the web world was divided — 
+Frontend = JavaScript 
+Backend = Everything else 
+
+ 
+
+Enter Ryan Dahl — The Creator 
+
+In 2009, a developer named Ryan Dahl was frustrated. 
+He looked at how traditional web servers like Apache worked. 
+
+In Apache, every new request created a new thread. 
+Threads consume memory, and handling thousands of users meant thousands of threads — 
+⚠️ which made servers slow and heavy. 
+
+Ryan thought, 
+
+“Why can’t we have a server that handles thousands of users with just one thread?” 
+
+He wanted a system that could handle I/O operations (like reading files, making network requests, accessing databases) without blocking other work. 
+
+ 
+
+The Spark — Using JavaScript Outside the Browser 
+
+At that time, Google had developed a super-fast JavaScript engine for Chrome — 
+the V8 Engine, written in C++. 
+Ryan realized: 
+
+“What if I take the V8 engine and run it outside the browser?” 
+
+He first experimented using Firefox’s SpiderMonkey engine, 
+but then quickly switched to Google’s V8 because it was much faster. 
+
+And that’s how he created a new runtime — 
+👉 Node.js 
+
+What Made Node.js Special 
+
+Node.js brought some revolutionary ideas: 
+
+Event-driven architecture – everything runs based on events. 
+
+Non-blocking I/O – it doesn’t wait for one task to finish before starting the next. 
+
+Single-threaded model – one thread can handle thousands of requests efficiently through an event loop. 
+
+This model allowed Node.js to be super fast and lightweight, perfect for real-time applications like chats, live streaming, and APIs. 
+
+The Rise of Node.js 
+
+2010 → npm (Node Package Manager) was launched — allowing developers to share open-source packages easily. 
+
+Node.js got huge community support and backing from the company Joyent. 
+
+It became the favorite for startups and companies like Netflix, PayPal, Uber, and LinkedIn. 
+
+Now developers could use JavaScript for both frontend and backend, making development smoother and faster. 
+
+ 
+
+Ryan Dahl’s Reflection 
+
+Years later, in 2018, Ryan Dahl gave a talk called “10 Things I Regret About Node.js”. 
+He mentioned a few design mistakes — like the node_modules system and some API design issues — 
+and from those learnings, he built a new runtime called Deno (an anagram of Node). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
