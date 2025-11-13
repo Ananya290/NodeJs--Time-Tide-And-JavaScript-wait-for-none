@@ -1,0 +1,36 @@
+Node.js Modules Explained | require() & module.exports Made Easy 
+
+ 
+
+1. What is a Module? 
+
+A module is a separate, independent piece of JavaScript code (usually a file). 
+
+It can contain logic, functions, or variables that can be reused elsewhere. 
+
+2. Exporting from a Module 
+
+Use module.exports to expose functions or objects from a module. 
+
+3. Importing a Module 
+
+Use require() to import modules into other files. 
+
+4. Folder as a Module 
+
+If a folder (like calculate/) contains multiple files (e.g., sum.js, subtract.js, divide.js), 
+you can create an index.js file inside it that exports all of them. 
+
+5. Importing JSON Files 
+
+You can directly import JSON files using require(). 
+
+6. What is module.exports ? 
+
+module.exports is an empty object by default. 
+
+7. Difference between CommonJs module and ES6 module. 
+
+A screenshot of a computer
+
+AI-generated content may be incorrect. 
