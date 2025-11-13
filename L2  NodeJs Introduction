@@ -1,0 +1,215 @@
+Topic: “JavaScript on the Server & The Magic Behind Node.js” 
+
+ 
+
+1. Introduction 
+
+Node.js allows JavaScript to run outside the browser, mainly on the server. 
+
+Earlier, JS was limited to browsers — now it can run anywhere. 
+
+ 
+
+2. What is a Server? 
+
+A server is just another computer (CPU) located remotely. 
+
+It receives requests and sends responses (like when you open google.com). 
+
+Example: 
+
+You → Client → Request google.com 
+
+Maps to IP (e.g., 114.265.123.8) 
+
+That IP points to Google’s server → response comes back. 
+
+3. Client & Server Relationship 
+
+Client: Your browser/computer (frontend) 
+
+Server: The machine hosting the website (backend) 
+
+4.JavaScript Before Node.js 
+
+JavaScript was only used in browsers → for frontend. 
+
+Backend used languages like Java, Python, C++, etc. 
+
+Node.js changed everything — you can now use JS both frontend & backend. 
+
+Hence the term Full Stack Developer. 
+
+Example: MERN / MEAN stack (MongoDB, Express, React, Node). 
+
+5. Node.js Popularity Reason 
+
+One language (JavaScript) for both frontend & backend = easier development. 
+
+Full Stack JS became the trend. 
+
+6. The Secret Behind Node.js 
+
+🔥 Node.js is not written in JavaScript! 
+
+It’s actually written in C++. 
+
+It embeds the V8 JavaScript Engine (made by Google). 
+
+V8 itself is also written in C++. 
+
+So at the core: 
+
+Node.js → C++ program 
+
+    ↳ contains V8 engine (C++) 
+
+         ↳ executes JavaScript 
+
+ 
+
+7. What is V8 Engine? 
+
+V8 is Google’s open-source high-performance JavaScript engine. 
+
+Written in C++. 
+
+Used in Chrome and Node.js. 
+
+Converts JavaScript → machine code that the CPU understands. 
+
+It follows ECMAScript standards (the official JavaScript rules). 
+
+Shape 
+
+8. ECMAScript — The JavaScript Standard 
+
+ECMAScript = the specification / rulebook for JavaScript. 
+
+Defines syntax, keywords, features (like let, const, ===, ternary, etc.). 
+
+Maintained by TC39 Committee (39 experts from big companies). 
+
+Different JS engines (V8, SpiderMonkey, Chakra, JavaScriptCore) must all follow ECMAScript. 
+
+That’s why JS runs the same everywhere. 
+
+Why Node.js Was Needed 
+
+V8 can only run JS that follows ECMAScript — no file system, no database, no network access. 
+
+Node.js adds extra powers (APIs) on top of V8 to allow: 
+
+File System access 
+
+Network (HTTP requests) 
+
+Databases 
+
+OS-level tasks 
+
+These are Node.js built-in modules (like fs, http, path, etc.). 
+
+So Node.js = 
+
+V8 Engine + Extra C++ APIs (Superpowers) 
+
+10. Node.js Composition 
+
+Node.js repository: 
+
+~62% JavaScript (for APIs) 
+
+~21% C++ (for core engine) 
+
+Inside its dependencies folder → you’ll find the V8 engine source. 
+
+11. The Big Picture (Layered View) 
+
+Your JS Code (Frontend / Backend) 
+
+        ↓ 
+
+V8 Engine (C++) executes it 
+
+        ↓ 
+
+Machine Code / Binary (understood by CPU) 
+
+So: 
+
+JS → C++ → Machine code → Processor executes 
+
+12. Why C++ at the Core? 
+
+Because the computer ultimately understands binary (0s and 1s). 
+
+C++ sits closer to hardware, can manage memory, and is faster. 
+
+JS → interpreted by V8 → converted to machine-level code → executed. 
+
+13. Summary 
+
+JavaScript is a high-level language. 
+
+V8 Engine is a C++ program that runs JS. 
+
+Node.js is another C++ program with V8 inside it + extra server APIs. 
+
+Node.js = JavaScript Runtime Environment → lets you run JS anywhere. 
+
+ 
+
+14. Important Keywords 
+
+Concept 
+
+Meaning 
+
+Client 
+
+User-side browser/computer 
+
+Server 
+
+Remote machine responding to requests 
+
+V8 Engine 
+
+C++ program executing JS 
+
+ECMAScript 
+
+Official JS standards/specs 
+
+TC39 
+
+Committee maintaining ECMAScript 
+
+Node.js 
+
+C++ app embedding V8 + APIs 
+
+Runtime 
+
+Environment where JS runs outside browser 
+
+APIs / Modules 
+
+Node.js “superpowers” (filesystem, network, DB access) 
+
+15. Final Thoughts 
+
+Every time you write console.log("Hello World") in Node.js: 
+
+Your code → processed by V8 (C++) 
+
+Converted into machine code 
+
+Run by the CPU 
+
+Appreciate how many layers work behind one simple line! 
+
+ 
+
+ 
